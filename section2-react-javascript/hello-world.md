@@ -2,7 +2,7 @@
 description: '자바스크립트와 자바는 이름만 비슷할 뿐 다른 언어입니다 (ex : 인도와 인도네시아)'
 ---
 
-# 📃 Hello World
+# 📃 1. Hello World
 
 ### 01. 자바스크립트?
 
@@ -54,7 +54,7 @@ description: '자바스크립트와 자바는 이름만 비슷할 뿐 다른 언
 
 
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (11) (1).png>)
 
 개발자 도구를 활성화 시키면 위와 같이, 개발자 도구 패널이 크롬 브라우저 내에 나타나게 됩니다.
 
@@ -116,7 +116,7 @@ CodeSandBox에 접속한 뒤, 오른쪽 위에 있는 Create Sandbox를 클릭�
 
 fork 버튼 클릭 까지 완료되셨다면, 위 사진의 빨간색 화살표로 표시된 Console 을 드래그하셔
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (6) (1).png>)
 
 위 사진에서 보이는 것처럼 상단 탭에 끌어다 놓으세요
 
