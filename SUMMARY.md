@@ -9,4 +9,4 @@
 
 ## section2 : React 를 위한 핵심만 골라낸 Javascript
 
-* [Hello World](section2-react-javascript/hello-world.md)
+* [📃 Hello World](section2-react-javascript/hello-world.md)
