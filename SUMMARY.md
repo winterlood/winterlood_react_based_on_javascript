@@ -7,7 +7,7 @@
 - [Page 1](section1/page-1.md)
 - [Page 2](section1/page-2.md)
 
-## section2 : React 를 위한 핵심만 골라낸 Javascript
+## section2 : React 를 위한 핵심만 골라낸 Javascript 기본편
 
 - [📃 1. Hello World](section2-react-javascript/hello-world.md)
 - [2. 변수와 상수](section2-react-javascript/2..md)
@@ -22,3 +22,7 @@
 - [11. 배열](section2-react-javascript/11.md)
 - [12. 반복문](section2-react-javascript/12.md)
 - [13. 배열 내장함수](section2-react-javascript/13.md)
+
+## section3 : React 를 위한 핵심만 골라낸 Javascript 응용편
+
+- [1. Truthy & Falsy](section3/1.md)
