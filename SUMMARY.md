@@ -21,3 +21,4 @@
 - [10. 객체](section2-react-javascript/10.md)
 - [11. 배열](section2-react-javascript/11.md)
 - [12. 반복문](section2-react-javascript/12.md)
+- [13. 배열 내장함수](section2-react-javascript/13.md)
