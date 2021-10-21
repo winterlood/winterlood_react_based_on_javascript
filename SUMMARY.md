@@ -27,4 +27,5 @@
 
 - [1. Truthy & Falsy](section3/1.md)
 - [2. 삼항 연산자](section3/2.md)
-- [3. 조건문 업그레이드](section3/3.md)
+- [3. 단락회로 평가](section3/3.md)
+- [4. 조건문 업그레이드](section3/4.md)
