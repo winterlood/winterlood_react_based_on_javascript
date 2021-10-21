@@ -19,4 +19,5 @@
 - [8. 함수 표현식](section2-react-javascript/8.md)
 - [9. 화살표 함수](section2-react-javascript/9.md)
 - [10. 객체](section2-react-javascript/10.md)
-- [10. 배열](section2-react-javascript/11.md)
+- [11. 배열](section2-react-javascript/11.md)
+- [12. 반복문](section2-react-javascript/12.md)
