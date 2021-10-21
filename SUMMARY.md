@@ -26,3 +26,5 @@
 ## section3 : React 를 위한 핵심만 골라낸 Javascript 응용편
 
 - [1. Truthy & Falsy](section3/1.md)
+- [2. 삼항 연산자](section3/2.md)
+- [3. 조건문 업그레이드](section3/3.md)
