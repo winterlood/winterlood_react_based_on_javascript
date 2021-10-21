@@ -30,3 +30,4 @@
 - [3. 단락회로 평가](section3/3.md)
 - [4. 조건문 업그레이드](section3/4.md)
 - [5. 비 구조화 할당](section3/5.md)
+- [6. spread 연산자](section3/6.md)
