@@ -31,3 +31,7 @@
 - [4. 조건문 업그레이드](section3/4.md)
 - [5. 비 구조화 할당](section3/5.md)
 - [6. spread 연산자](section3/6.md)
+- [7. 스코프와 호이스팅](section3/7.md)
+- [8. 프로미스](section3/8.md)
+- [9. async/await](section3/9.md)
+- [10. API 호출하기](section3/10.md)
