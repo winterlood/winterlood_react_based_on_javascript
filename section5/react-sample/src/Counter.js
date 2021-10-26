@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import CountResult from "./CountResult";
 
-const Counter = () => {
-  const [count, setCount] = useState(0); // <- 추가된 라인
+const Counter = (props) => {
+  const [count, setCount] = useState(props.initialValue); // <- 추가된 라인
 
   const onIncrease = () => {
     setCount(count + 1);
@@ -13,7 +14,7 @@ const Counter = () => {
 
   return (
     <div>
-      <h2>{count}</h2>
+      <CountResult count={count} />
       <button onClick={onIncrease}>&nbsp;+&nbsp;</button>
       <button onClick={onDecrease}>&nbsp;-&nbsp;</button>
     </div>
