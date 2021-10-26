@@ -52,3 +52,23 @@
 - [3. Event](section5/3.md)
 - [4. State](section5/4.md)
 - [5. Props](section5/5.md)
+- [6. React스럽게 생각하기](section5/6.md)
+
+## section6 : 간단한 일기장을 만들며 배우는 React 기본
+
+- [0. 무엇을 만들지 미리보기](section6/1.md)
+- [1. 사용자 입력 처리하기](section6/1.md)
+- [2. useRef를 활용하여 잘못된 입력 알려주기](section6/2.md)
+- [3. 배열 사용하기](section6/2.md)
+- [4. React Developer Tools 사용하기](section6/.md)
+- [5. useEffect](section6/.md)
+- [6. 원하는 시점에 API호출(비동기 함수 실행)하기](section6/.md)
+- [7. 최적화하기 1 : useMemo](section6/.md)
+- [8. 최적화하기 2 : useCallback](section6/.md)
+- [9. 최적화하기 3 : React.memo](section6/.md)
+
+## section 7 : React 심화
+
+## section 8 : 감성일기장을 만들어 보는 React 실전
+
+## section 9 : 마무리
