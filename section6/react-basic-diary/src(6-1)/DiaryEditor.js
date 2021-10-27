@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-const DiaryEditor = ({ onCreate }) => {
+const DiaryEditor = () => {
   const [diary, setDiary] = useState({
     author: "",
     content: "",
@@ -14,38 +14,11 @@ const DiaryEditor = ({ onCreate }) => {
     });
   };
 
-  const handleAddButtonClick = () => {
-    console.log("추가될 일기 : ", diary);
-
-    if (diary.author.length < 1) {
-      authorRef.current.focus();
-      return;
-    }
-
-    if (diary.content.length < 1) {
-      contentRef.current.focus();
-      return;
-    }
-
-    onCreate(diary.author, diary.content, diary.emotion);
-    alert("일기가 성공적으로 추가되었습니다");
-
-    setDiary({
-      author: "",
-      content: "",
-      emotion: 1,
-    });
-  };
-
-  const authorRef = useRef(null);
-  const contentRef = useRef(null);
-
   return (
     <div className="DiaryEditor_container">
       <h2>오늘의 일기</h2>
       <div>
         <input
-          ref={authorRef}
           name="author"
           placeholder="작성자"
           type="text"
@@ -55,7 +28,6 @@ const DiaryEditor = ({ onCreate }) => {
       </div>
       <div>
         <textarea
-          ref={contentRef}
           name="content"
           placeholder="일기"
           type="text"
@@ -76,9 +48,6 @@ const DiaryEditor = ({ onCreate }) => {
           <option value={4}>4</option>
           <option value={5}>5</option>
         </select>
-      </div>
-      <div>
-        <button onClick={handleAddButtonClick}>일기 저장하기</button>
       </div>
     </div>
   );

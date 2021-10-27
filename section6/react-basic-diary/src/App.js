@@ -1,69 +1,67 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import DiaryEditor from "./DiaryEditor";
 import DiaryList from "./DiaryList";
-import "./styles.css";
+import "./App.css";
 
 const App = () => {
+  const [data, setData] = useState([]);
+
+  const dataId = useRef(0);
+
+  const getData = async () => {
+    const res = await fetch(
+      "https://jsonplaceholder.typicode.com/comments"
+    ).then((res) => res.json());
+
+    setData(
+      res.slice(0, 20).map((it) => {
+        return {
+          author: it.email,
+          content: it.body,
+          emotion: Math.floor(Math.random(0, 10) * 10),
+          created_date: new Date().getTime(),
+          id: dataId.current++,
+        };
+      })
+    );
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const onCreate = (author, content, emotion) => {
+    const created_date = new Date().getTime();
+    const newItem = {
+      author,
+      content,
+      emotion,
+      created_date,
+      id: dataId.current,
+    };
+
+    dataId.current += 1;
+    setData([newItem, ...data]);
+  };
+
+  const onRemove = (targetId) => {
+    setData(data.filter((it) => it.id !== targetId));
+  };
+
+  const onEdit = (targetId, newContent) => {
+    setData(
+      data.map((it) =>
+        it.id === targetId ? { ...it, content: newContent } : it
+      )
+    );
+  };
+
   return (
     <div className="App">
-      <DiaryEditor />
+      <DiaryEditor onCreate={onCreate} />
+      <DiaryList diaryList={data} onRemove={onRemove} onEdit={onEdit} />
     </div>
   );
 };
-
-// const App = () => {
-//   const [diaryList, setDiaryList] = useState([]);
-
-//   const getData = async () => {
-//     const res = await fetch("https://jsonplaceholder.typicode.com/posts").then(
-//       (res) => res.json()
-//     );
-
-//     setDiaryList(
-//       res.slice(0, 20).map((it) => {
-//         const created_date = new Date().getTime();
-//         return {
-//           author: "test",
-//           content: it.body,
-//           emotion: Math.floor(Math.random(0, 10) * 10),
-//           created_date: created_date,
-//         };
-//       })
-//     );
-//   };
-
-//   useEffect(() => {
-//     getData();
-//   }, []);
-
-//   const handleAddDiary = (author, content, emotion) => {
-//     const created_date = new Date().getTime();
-//     const newDiary = { author, content, emotion, created_date: created_date };
-//     setDiaryList([newDiary, ...diaryList]);
-//   };
-
-//   const handleRemoveDiary = (diaryIndex) => {
-//     setDiaryList(diaryList.filter((_, idx) => idx !== diaryIndex));
-//   };
-
-//   const handleEditDiary = (diaryIndex, content) => {
-//     setDiaryList(
-//       diaryList.map((it, idx) =>
-//         idx === diaryIndex ? { ...it, content: content } : it
-//       )
-//     );
-//   };
-
-//   return (
-//     <div className="App">
-//       <DiaryEditor handleAddDiary={handleAddDiary} />
-//       <DiaryList
-//         diaryList={diaryList}
-//         handleRemoveDiary={handleRemoveDiary}
-//         handleEditDiary={handleEditDiary}
-//       />
-//     </div>
-//   );
-// };
 
 export default App;

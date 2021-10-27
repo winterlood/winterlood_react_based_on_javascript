@@ -57,15 +57,18 @@
 ## section6 : 간단한 일기장을 만들며 배우는 React 기본
 
 - [0. 무엇을 만들지 미리보기](section6/1.md)
-- [1. 사용자 입력 처리하기](section6/1.md)
-- [2. useRef를 활용하여 잘못된 입력 알려주기](section6/2.md)
-- [3. 배열 사용하기](section6/2.md)
-- [4. React Developer Tools 사용하기](section6/.md)
-- [5. useEffect](section6/.md)
-- [6. 원하는 시점에 API호출(비동기 함수 실행)하기](section6/.md)
-- [7. 최적화하기 1 : useMemo](section6/.md)
-- [8. 최적화하기 2 : useCallback](section6/.md)
-- [9. 최적화하기 3 : React.memo](section6/.md)
+- [1. DiaryEditor - 사용자 입력 처리](section6/1.md)
+- [2. DiaryEditor - useRef를 활용하여 잘못된 입력 알려주기](section6/2.md)
+- [3. 일기 리스트 - 배열 사용하기](section6/3.md)
+- [4. 일기 추가 - 배열 데이터 추가하기](section6/4.md)
+- [5. 일기 삭제 - 배열 데이터 삭제하기](section6/5.md)
+- [6. 일기 수정 - 배열 데이터 수정하기](section6/6.md)
+- [7. React LifeCycle & useEffect](section6/7.md)
+- [8. API호출(비동기 함수 실행)을 통한 초기데이터 설정하기](section6/8.md)
+- [9. React Developer Tools 사용하기](section6/.md)
+- [10. 최적화하기 1 : useMemo](section6/.md)
+- [11. 최적화하기 2 : useCallback](section6/.md)
+- [12. 최적화하기 3 : React.memo](section6/.md)
 
 ## section 7 : React 심화
 
