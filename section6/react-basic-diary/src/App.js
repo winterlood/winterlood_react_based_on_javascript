@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import DiaryEditor from "./DiaryEditor";
 import DiaryList from "./DiaryList";
-// import "./styles.css";
+import "./styles.css";
 
 const App = () => {
   return (
