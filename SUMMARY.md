@@ -65,10 +65,11 @@
 - [6. 일기 수정 - 배열 데이터 수정하기](section6/6.md)
 - [7. React LifeCycle & useEffect](section6/7.md)
 - [8. API호출(비동기 함수 실행)을 통한 초기데이터 설정하기](section6/8.md)
-- [9. React Developer Tools 사용하기](section6/.md)
-- [10. 최적화하기 1 : useMemo](section6/.md)
-- [11. 최적화하기 2 : useCallback](section6/.md)
-- [12. 최적화하기 3 : React.memo](section6/.md)
+- [9. React Developer Tools 사용하기](section6/9.md)
+- [10. 최적화하기 1 : useMemo](section6/10.md)
+- [11. 최적화하기 2 : memo](section6/11.md)
+- [12. 최적화하기 3 : useCallback & 함수형 업데이트](section6/12.md)
+- [13. 최적화하기 4 : 최적화 완성하기](section6/13.md)
 
 ## section 7 : React 심화
 
