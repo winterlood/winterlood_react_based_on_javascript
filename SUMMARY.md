@@ -70,6 +70,8 @@
 - [11. 최적화하기 2 : memo](section6/11.md)
 - [12. 최적화하기 3 : useCallback & 함수형 업데이트](section6/12.md)
 - [13. 최적화하기 4 : 최적화 완성하기](section6/13.md)
+- [14. useReducer](section6/14.md)
+- [15. ContextAPI](section6/15.md)
 
 ## section 7 : React 심화
 
