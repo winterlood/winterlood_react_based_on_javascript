@@ -4,9 +4,6 @@
 
 ## section1 : 시작하며
 
-- [Page 1](section1/page-1.md)
-- [Page 2](section1/page-2.md)
-
 ## section2 : React 를 위한 핵심만 골라낸 Javascript 기본편
 
 - [1. Hello World](section2-react-javascript/hello-world.md)
@@ -73,8 +70,10 @@
 - [14. useReducer](section6/14.md)
 - [15. ContextAPI](section6/15.md)
 
-## section 7 : React 심화
+## section 7 : 감성일기장을 만들어 보는 React 실전
 
-## section 8 : 감성일기장을 만들어 보는 React 실전
+- [1. 무엇을 만들지 미리보기](section7/1.md)
+- [2. SSR vs CSR](section7/2.md)
+- [3. react-router-dom 라우팅](section7/3.md)
 
 ## section 9 : 마무리
