@@ -14,7 +14,6 @@ const Edit = ({ match }) => {
     if (diaryList.length >= 1) {
       const targetDiary = diaryList.find((it) => it.id === parseInt(id));
       if (targetDiary) {
-        console.log(targetDiary);
         setOriginData(targetDiary);
       } else {
         alert("없는 일기입니다.");

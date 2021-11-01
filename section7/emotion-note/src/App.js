@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import New from "./pages/New";
 import Edit from "./pages/Edit";
 import Diary from "./pages/Diary";
-import { createContext, useReducer, useRef } from "react";
+import { createContext, useEffect, useReducer, useRef } from "react";
 
 export const DiaryStateContext = createContext(null);
 export const DiaryDispatchContext = createContext(null);
@@ -76,6 +76,17 @@ const reducer = (state, action) => {
 };
 
 const App = () => {
+  useEffect(() => {
+    // localStorage.setItem("item1", "10");
+    // localStorage.setItem("item2", 20);
+    // localStorage.setItem("item3", JSON.stringify({ value: 30 }));
+    const item1 = localStorage.getItem("item1");
+    const item2 = localStorage.getItem("item2");
+    const item3 = JSON.parse(localStorage.getItem("item3"));
+
+    console.log({ item1, item2, item3 });
+  }, []);
+
   const [data, dispatch] = useReducer(reducer, dummyData);
   const dataId = useRef(6);
 
