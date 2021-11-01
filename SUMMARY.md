@@ -53,7 +53,7 @@
 
 ## section6 : 간단한 일기장을 만들며 배우는 React 기본
 
-- [0. 무엇을 만들지 미리보기](section6/1.md)
+- [0. 무엇을 만들지 미리보기](section6/0.md)
 - [1. DiaryEditor - 사용자 입력 처리](section6/1.md)
 - [2. DiaryEditor - useRef를 활용하여 잘못된 입력 알려주기](section6/2.md)
 - [3. 일기 리스트 - 배열 사용하기](section6/3.md)
