@@ -75,5 +75,16 @@
 - [1. 무엇을 만들지 미리보기](section7/1.md)
 - [2. SSR vs CSR](section7/2.md)
 - [3. react-router-dom 라우팅](section7/3.md)
+- [4. 프로젝트 기초공사하기](section7/4.md)
+- [5. 프로젝트 기초공사하기 2](section7/5.md)
+- [6. Home : 홈 구현하기](section7/6.md)
+- [7. New : 새 일기 페이지 구현하기](section7/7.md)
+- [8. Edit : 일기 수정 페이지 구현하기](section7/8.md)
+- [9. Diary : 일기 상세 페이지 구현하기](section7/9.md)
+- [10. LocalStroage에 일기 데이터 저장하기](section7/10.md)
+- [11. 최적화 하기](section7/11.md)
+- [12. 배포 준비하기](section7/12.md)
+- [13. 배포하기](section7/13.md)
+- [14. 이쁘게 공유하기 : Open Graph](section7/14.md)
 
 ## section 9 : 마무리
