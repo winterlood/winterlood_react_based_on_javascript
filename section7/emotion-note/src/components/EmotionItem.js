@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 const EmotionItem = ({
   emotion_id,
@@ -21,4 +21,4 @@ const EmotionItem = ({
   );
 };
 
-export default EmotionItem;
+export default memo(EmotionItem);

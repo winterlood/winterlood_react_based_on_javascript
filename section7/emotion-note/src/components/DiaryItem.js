@@ -1,8 +1,8 @@
-import React from "react";
+import React, { memo } from "react";
 import { useHistory } from "react-router-dom";
 import MyButton from "./MyButton";
 
-const DiaryItem = ({ id, emotion, content, date }) => {
+const DiaryItem = memo(({ id, emotion, content, date }) => {
   const history = useHistory();
   const strDate = new Date(parseInt(date)).toLocaleDateString();
 
@@ -33,6 +33,6 @@ const DiaryItem = ({ id, emotion, content, date }) => {
       </div>
     </div>
   );
-};
+});
 
 export default DiaryItem;

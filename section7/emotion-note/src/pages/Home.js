@@ -19,7 +19,6 @@ const Home = () => {
         1
       ).getTime();
 
-      console.log(firstDay);
       const lastDay = new Date(
         curDate.getFullYear(),
         curDate.getMonth() + 1,
@@ -29,7 +28,6 @@ const Home = () => {
         59
       ).getTime();
 
-      console.log(lastDay);
       setData(
         diaryList.filter(
           (it) => firstDay <= parseInt(it.date) && parseInt(it.date) <= lastDay

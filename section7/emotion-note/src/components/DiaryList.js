@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { memo, useCallback, useEffect, useState } from "react";
 import MyButton from "./MyButton";
 import { useHistory } from "react-router-dom"; // 추가
 import DiaryItem from "./DiaryItem";
@@ -14,7 +14,7 @@ const filterOptionList = [
   { value: "bad", name: "안좋은 감정만" },
 ]; // 추가
 
-const ControlMenu = ({ value, onChange, optionList }) => {
+const ControlMenu = memo(({ value, onChange, optionList }) => {
   return (
     <select
       value={value}
@@ -28,20 +28,20 @@ const ControlMenu = ({ value, onChange, optionList }) => {
       ))}
     </select>
   );
-};
+});
 
 const DiaryList = ({ diaryList }) => {
   const history = useHistory(); //추가
   const [sortType, setSortType] = useState("latest");
   const [filter, setFilter] = useState("all");
 
-  const handleChangeSortType = (sortType) => {
+  const handleChangeSortType = useCallback((sortType) => {
     setSortType(sortType);
-  };
+  }, []);
 
-  const handleChangeFilter = (filter) => {
+  const handleChangeFilter = useCallback((filter) => {
     setFilter(filter);
-  };
+  }, []);
 
   const getProcessedDiaryList = () => {
     const filterCallback = (item) => {

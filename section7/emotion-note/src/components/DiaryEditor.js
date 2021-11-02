@@ -1,4 +1,10 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, {
+  useCallback,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { emotionList } from "../lib/emotion";
 import EmotionItem from "./EmotionItem";
 import Header from "./Header";
@@ -20,9 +26,9 @@ const DiaryEditor = ({ isEdit, originData }) => {
 
   const contentRef = useRef(null);
 
-  const handleClickEmote = (emotion) => {
+  const handleClickEmote = useCallback((emotion) => {
     setEmotion(() => emotion);
-  };
+  }, []);
 
   const handleRemove = () => {
     if (window.confirm("정말 삭제하시겠습니까?")) {
