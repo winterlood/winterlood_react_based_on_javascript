@@ -13,6 +13,11 @@ const DiaryItem = memo(({ id, emotion, content, date }) => {
   const goEdit = () => {
     history.push(`/edit/${id}`);
   };
+
+  // CodeSandBox 상에서 수행될 수 있도록 추가함, Local기준 추가할 필요 X
+  const env = process.env;
+  env.PUBLIC_URL = env.PUBLIC_URL || "";
+
   return (
     <div className={"DiaryItem"}>
       <div

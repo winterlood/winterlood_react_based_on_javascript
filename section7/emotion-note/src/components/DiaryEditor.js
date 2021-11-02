@@ -3,14 +3,14 @@ import React, {
   useContext,
   useEffect,
   useRef,
-  useState,
+  useState
 } from "react";
-import { emotionList } from "../lib/emotion";
 import EmotionItem from "./EmotionItem";
 import Header from "./Header";
 import MyButton from "./MyButton";
-import { DiaryDispatchContext } from "./../App";
+import { emotionList } from "../lib/emotion";
 import { useHistory } from "react-router-dom";
+import { DiaryDispatchContext } from "./../App";
 
 const getStringDate = (date) => {
   return date.toISOString().slice(0, 10);

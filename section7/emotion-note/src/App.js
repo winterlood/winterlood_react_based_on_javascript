@@ -17,7 +17,7 @@ const reducer = (state, action) => {
     }
     case "CREATE": {
       const newItem = {
-        ...action.data,
+        ...action.data
       };
       newState = [newItem, ...state];
       break;
@@ -30,7 +30,7 @@ const reducer = (state, action) => {
       newState = state.map((it) =>
         it.id === action.data.id
           ? {
-              ...action.data,
+              ...action.data
             }
           : it
       );
@@ -59,7 +59,7 @@ const App = () => {
   }, []);
 
   const [data, dispatch] = useReducer(reducer, []);
-  const dataId = useRef(6);
+  const dataId = useRef(0);
 
   const onCreate = (date, content, emotion) => {
     const nowSavingDate = new Date(date);
@@ -69,8 +69,8 @@ const App = () => {
         id: dataId.current,
         date: nowSavingDate.getTime(),
         content,
-        emotion,
-      },
+        emotion
+      }
     });
     dataId.current += 1;
   };
@@ -89,15 +89,15 @@ const App = () => {
         id: targetId,
         date: nowSavingDate.getTime(),
         content,
-        emotion,
-      },
+        emotion
+      }
     });
   };
 
   const dispatches = {
     onCreate,
     onEdit,
-    onRemove,
+    onRemove
   };
 
   return (
