@@ -6,19 +6,20 @@
 
 ## section2 : React 를 위한 핵심만 골라낸 Javascript 기본편
 
-- [1. Hello World](section2-react-javascript/hello-world.md)
-- [2. 변수와 상수](section2-react-javascript/2..md)
-- [3. 자료형과 형 변환](section2-react-javascript/3.md)
-- [4. 연산자](section2-react-javascript/4.md)
-- [5. null 병합 연산자](section2-react-javascript/5.md)
-- [6. 조건문](section2-react-javascript/6.md)
-- [7. 함수](section2-react-javascript/7.md)
-- [8. 함수 표현식](section2-react-javascript/8.md)
-- [9. 화살표 함수](section2-react-javascript/9.md)
-- [10. 객체](section2-react-javascript/10.md)
-- [11. 배열](section2-react-javascript/11.md)
-- [12. 반복문](section2-react-javascript/12.md)
-- [13. 배열 내장함수](section2-react-javascript/13.md)
+- [0. 섹션소개](section2/0.md)
+- [1. Hello World](section2/1.md)
+- [2. 변수와 상수](section2/2..md)
+- [3. 자료형과 형 변환](section2/3.md)
+- [4. 연산자](section2/4.md)
+- [5. null 병합 연산자](section2/5.md)
+- [6. 조건문](section2/6.md)
+- [7. 함수](section2/7.md)
+- [8. 함수 표현식](section2/8.md)
+- [9. 화살표 함수](section2/9.md)
+- [10. 객체](section2/10.md)
+- [11. 배열](section2/11.md)
+- [12. 반복문](section2/12.md)
+- [13. 배열 내장함수](section2/13.md)
 
 ## section3 : React 를 위한 핵심만 골라낸 Javascript 응용편
 
